@@ -22,6 +22,7 @@ monitoring system for car prices, especially during the COVID-19 pandemic since 
   |-- notebook_for_visualization.ipynb
   |-- Modules
   |   |-- averageprice_bodytype_2.py
+  |   |-- Car_brands_and_COVID_cities_analysis.py
   |   |-- pie_bodytype.py
   |   |-- price_plot.py
   |   |-- pricevsdays_bodytype.py
