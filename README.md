@@ -32,6 +32,8 @@ monitoring system for car prices, especially during the COVID-19 pandemic since 
   |-- cleaned_data
   |   |-- Cleaned10GB.csv
   |-- plots
+  |   |-- Car_price_range_vs_price.png
+  |   |-- Cities_affected_bycovid_vs_price.png
   |   |-- all level_vs_price_line_sns.png
   |   |-- average-price vs region.png
   |   |-- averages.png
@@ -59,6 +61,7 @@ monitoring system for car prices, especially during the COVID-19 pandemic since 
 ## Run the code
 1. Run the ```data_cleaning.py``` to clean the data in ```raw_data```  
 2. Run the ```data_analysis.py``` to get all graphs.
+3. Run the ```Car_brands_and_COVID_cities_analysis.py``` to get analysis on Car Brands of different price ranges and prices in cities affected by COVID-19
 
 ## third-party modules
 * pandas_profiling
