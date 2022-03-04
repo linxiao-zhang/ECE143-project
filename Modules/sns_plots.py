@@ -4,8 +4,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
+from pandas import DataFrame
 
-from utils import date2time, compute_average_data
+from Modules.utils import date2time, compute_average_data
 
 matplotlib.use('TkAgg')
 
@@ -108,9 +109,17 @@ def sns_plot_line_picture_by_day(ls, name_prefix, post_time_index, price_index):
     for data_index in posting_time:
         price.append(compute_average_data(time_price_map[data_index]))
 
-    f, ax = plt.subplots(figsize=(12, 8))
+    f, ax = plt.subplots(figsize=(12, 10))
     ax.set_title(name_prefix + " cars " + 'price vs day', pad=12)
-    fig = sns.lineplot(x=time_date, y=price)
+
+    summary = []
+    for i in range(len(time_date)):
+        x_t = time_date[i]
+        y_t = price[i]
+        summary.append([x_t, y_t])
+    data = DataFrame(summary, columns=['Date', 'Price'])
+
+    fig = sns.lineplot(x="Date", y="Price", data=data)
     scatter_fig = fig.get_figure()
     plt.xticks(rotation=90)
     plt.show()
