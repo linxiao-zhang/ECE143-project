@@ -1,13 +1,9 @@
 import matplotlib
-
-from data_cleaning import get_cleaned_data_list, get_all_list
 import csv
+from Modules.sns_plots import sns_plot_line_picture_by_day
+from Modules.utils import sns_figure_plot_bar, compute_max, compute_average
+from data_cleaning import get_cleaned_data_list, get_all_list
 
-# Liblaries for preprocessing
-# Liblaries for models
-# Liblaries for cross validation and model evaluation
-from sns_plots import sns_plot_line_picture_by_day
-from utils import sns_figure_plot_bar, compute_max, compute_average
 
 matplotlib.use('TkAgg')
 file_path = "./raw_data/vehicles.csv"

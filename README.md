@@ -15,24 +15,45 @@ monitoring system for car prices, especially during the COVID-19 pandemic since 
 ## File Structure
 
 ```
-Root
-|
-+----raw_data
-|
-+----cleaned_data
-|
-+----plots
-|
-|    data_cleaing.py
-|    data_analysis.py
-|    utils.py
-|    averageprice_bodytype_2.py
-|    notebook_for_visualization.ipynb
-|    pie_bodytype.py
-|    pricevsdays_bodytype.py
-|    sns_plots.py
-|    README.md
+|-- ROOT
+  |-- README.md
+  |-- data_analysis.py
+  |-- data_cleaning.py
+  |-- notebook_for_visualization.ipynb
+  |-- Modules
+  |   |-- averageprice_bodytype_2.py
+  |   |-- pie_bodytype.py
+  |   |-- price_plot.py
+  |   |-- pricevsdays_bodytype.py
+  |   |-- season_plot.py
+  |   |-- sns_plots.py
+  |   |-- utils.py
+  |-- cleaned_data
+  |   |-- Cleaned10GB.csv
+  |-- plots
+  |   |-- all level_vs_price_line_sns.png
+  |   |-- average-price vs region.png
+  |   |-- averages.png
+  |   |-- avg_firstwave.png
+  |   |-- avg_secondwave.png
+  |   |-- bodytypes.png
+  |   |-- car_season_plot.png
+  |   |-- daysonmarket_vs_price.png
+  |   |-- first wave_vs_price_line_sns.png
+  |   |-- high level_vs_price_line_sns.png
+  |   |-- low level_vs_price_line_sns.png
+  |   |-- mid level_vs_price_line_sns.png
+  |   |-- second wave_vs_price_line_sns.png
+  |   |-- sum-price vs region.png
+  |   |-- price vs days, grouped by body type
+  |       |-- Figure_1.png
+  |       |-- Figure_2.png
+  |       |-- Figure_3.png
+  |       |-- Figure_4.png
+  |-- raw_data
+      |-- vehicles.csv
 ```
+
 
 ## Run the code
 1. Run the ```data_cleaning.py``` to clean the data in ```raw_data```  
